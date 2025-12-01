@@ -296,3 +296,108 @@ footer {
         font-size: 1.1em;
     }
 }
+
+/* -------------------------------------------------
+   📱 EXTRA SMALL PHONES (0–480px)
+--------------------------------------------------*/
+@media (max-width: 480px) {
+
+    /* NAV */
+    .nav-links {
+        display: none; /* hide links on small screens */
+    }
+
+    /* HEADER */
+    header {
+        padding: 40px 5%;
+    }
+
+    h1 {
+        font-size: 1.6em;
+        line-height: 1.2;
+    }
+
+    .trust-statement {
+        font-size: 0.9em;
+    }
+
+    /* AUTHENTICATION */
+    #authenticate {
+        padding: 30px 5%;
+        margin: 20px auto;
+    }
+
+    #coa-code {
+        padding: 14px;
+        font-size: 1em;
+    }
+
+    .authentication-form button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    /* ABOUT SECTION */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .text-block {
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 95%;
+        min-width: unset; /* REMOVE min-width that breaks phones */
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 20px;
+    }
+}
+
+
+
+/* -------------------------------------------------
+   📱📲 PHONES + SMALL DEVICES (481–768px)
+--------------------------------------------------*/
+@media (max-width: 768px) {
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-block {
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 85%;
+        min-width: unset;
+    }
+
+    #authenticate {
+        padding: 40px 5%;
+    }
+}
+
+
+
+/* -------------------------------------------------
+   📲💻 TABLETS (769–1024px)
+--------------------------------------------------*/
+@media (max-width: 1024px) {
+
+    .about-content {
+        gap: 25px;
+    }
+
+    .about-image {
+        max-width: 60%;
+        min-width: unset;
+    }
+}
